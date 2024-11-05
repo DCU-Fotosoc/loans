@@ -77,8 +77,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                         } else {
                             $email = trim(mysqli_real_escape_string($db, $_POST['regEmail']));
                             $domain = substr($email, strpos($email, "@") + 1);
-                            if ($domain != "remocademy.com") {
-                                $email_err = "Please use the school email";
+                            if ($domain != "mail.dcu.ie") {
+                                $email_err = "Please use your DCU email address";
                                 $_SESSION['error'] .= $email_err . " | ";
                             } else {
                                 $email = trim($_POST["regEmail"]);
@@ -275,7 +275,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Media Team Equipment Management System</title>
+    <title>DCU Fotosoc Loans</title>
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Font-->
@@ -293,7 +293,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="form-v8-content">
 
         <div class="form-left">
-            <img src="assets/images/icon1.jpeg" alt="form" style="object-fit: cover;width:469px;height: 584px">
+            <img src="assets/images/logo.png" alt="form" style="object-fit: cover;width:469px;height: 584px">
         </div>
 
         <div class="form-right">
